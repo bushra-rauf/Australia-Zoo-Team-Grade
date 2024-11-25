@@ -75,3 +75,43 @@
     background-color: var(--active-color);
     color: black;
 }
+
+
+/*resp*/
+
+@media (max-width: 375px) {
+
+    .sidebar {
+        background-color: rgb(33, 15, 15);
+        width: 90px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        padding: .4rem 0.8rem;
+        transition: all 0.5s ease;
+    }
+
+
+    .side-content {
+       background-color: red;
+
+    }
+
+    .tessst {
+        width: 300px;
+    }
+    
+  }
+.menu-btn {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    padding-bottom: 40px;
+}
+
+.btn-line { 
+    margin: 2px;
+    width: 15px;
+    border: solid white 1px;
+}

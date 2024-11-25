@@ -33,3 +33,11 @@ function animale (name, lifespan, group, food, description, length, weight,found
 
 
 
+
+
+let btnn = document.querySelector("menu-btn");
+let siiiide = document.querySelector("side-content");
+
+btnn.addEventListener("event", () => {
+    siiiide.classList.add("tessst")
+})
