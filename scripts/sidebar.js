@@ -1,4 +1,6 @@
 const sidebar = document.querySelectorAll(".sidebar-item"); 
+let spanbuttn = document.querySelector("span");
+
 sidebar.forEach(sidebar => {
     sidebar.addEventListener("click", () => {
         document.querySelector(".active")?.classList.remove("active");
@@ -10,6 +12,7 @@ sidebar.forEach(sidebar => {
 
 const togglebuttn = document.querySelector(".menu-btn");
 togglebuttn.addEventListener("click", () =>{
+   // document.querySelector("span").classList.toggle("open")
     document.querySelector(".side-content").classList.toggle("open")
 })
 

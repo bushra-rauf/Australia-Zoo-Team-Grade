@@ -37,7 +37,7 @@
     width: 260px;
     cursor: pointer;
 }
- 
+
 .sidebar-item.active  {
     -webkit-transition: background-color 1.5s ease-out;
     -moz-transition: background-color 1.5s ease-out;
@@ -95,11 +95,19 @@
 }
 
 @media (max-width: 430px) {
+    .sidebar-nav {
+     
+        width: 250px;
+        padding: 0;
+        margin: 0;
+        height: auto;      
+    }
+ 
     .sidebar {
         cursor: pointer;
         width: 90px;
         position: absolute;
-        top: 0;
+        top: 10;
         left: 0;
         height: 100vh;
         padding: 0;
@@ -116,11 +124,11 @@
     }
 
     .open {
+        height: 100%;
         width: 300px;
         display: block;
         background-color: var(--sidebar-bkg-color);
-        margin: 0px;
-        height: 100%;
+        margin: 0px;    
         transition: all 0.5s ease;  
     }
 }
