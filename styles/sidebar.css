@@ -38,12 +38,12 @@
 }
 
  
-.sidebar-item  {
+/* .sidebar-item  {
     -webkit-transition: background-color 2s ease-out;
     -moz-transition: background-color 2s ease-out;
     -o-transition: background-color 2s ease-out;
     transition: background-color 2s ease-out;
-}
+} */
 .sidebar-item a:hover{ 
     color: black;
     font-weight: bold;

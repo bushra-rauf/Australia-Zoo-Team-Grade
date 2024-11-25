@@ -1,3 +1,12 @@
+const sidebar = document.querySelectorAll(".sidebar-item"); 
+sidebar.forEach(sidebar => {
+   sidebar.addEventListener("click", () => {
+      document.querySelector(".active")?.classList.remove("active");
+      sidebar.classList.add("active");  
+   })
+
+})
+
 let animales = [mammals, reptiles, birds];
 
 let mammals = {
@@ -23,9 +32,4 @@ function animale (name, lifespan, group, food, description, length, weight,found
 }
 
 
-let newElement = document.createElement("h3");
-newElement.textContent = "This element is the new element.";
-let oldElement = document.getElementById("replace");
-oldElement.addEventListener("click", e => {
-    oldElement.newElement;
-})
+
