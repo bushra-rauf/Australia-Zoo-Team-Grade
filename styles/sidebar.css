@@ -5,6 +5,7 @@
 :root {
     --sidebar-bkg-color :  #023E25;
     --sidebar-color :  #A6EA01;
+    --active-color :  #3d4f14;
 }
 
 .sidebar {
@@ -71,5 +72,6 @@
 }
 
 .active {
-    background-color: red;
+    background-color: var(--active-color);
+    color: black;
 }
