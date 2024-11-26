@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+}
+
+:root {
+    --body-color : #E4E4E4;
+    --navbar-colorr :  #023E25;
+    --navbar-color :  #02864f;
+    --content-color :  #A6EA01;
+    --active-color :  #6d8e21fb;
+}
+
+body {
+    background-color: var(--body-color);
+}
+
+.reptil_header {
+    background: linear-gradient(var(--navbar-color), #c6c7c7cf), rgba(214, 238, 149, 0.907);
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar {
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-bar_list {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+
+.nav-bar_list li {
+    list-style: none;
+    padding-left: 40px;
+}
+
+.nav-bar_list li a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.hexagon-shape {
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    width: 20px;
+    height: 16px;
+    transform: rotate(-30deg) skewX(30deg) scaleY(.866);
+}
+.hexagon-shape:before {
+    position: absolute;
+    right: 6.7%;
+    bottom: 0;
+    left: 6.7%;
+    top: 0;
+    transform: scaleY(1.155) skewX(-30deg) rotate(30deg);
+    background-color: #a07405;
+    content: '';
+}
+
+.floatright {
+    float: right;
+}
+
+/*Header*/
+.header_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin: 0 160px;
+}
+
+.header_presentation {
+    color: white;
+}
+
+.header_presentation h1 {
+    padding-bottom: 20px;
+}
+
+
+/* side bar*/*
+
+.reptil_main {
+    width: 950px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    margin: 150px auto;
+    height: auto;
+}
+
+.reptil_sectionn {
+  /*  background-color: rgb(94, 203, 88);*/
+  border: 1px solid black;
+    width: 70%;
+ 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    justify-content: space-evenly;
+}
+
+
+.reptil_side_bar {
+  background-color: var(--navbar-color);
+    width: 250px;
+    padding: 10px;
+    height: 500px;
+    color: var(--content-color);
+}
+
+.reptil_side_bar h2 {
+    
+    margin: 20px;
+   
+}
+.reptil_side_list {
+    padding: 0;
+    margin-top: 45px;
+}
+
+.reptil_side_list li {
+  
+    list-style: none;
+    padding: 10px 30px;  
+    cursor: pointer;
+    border: 1px solid var(--navbar-color);
+    margin: 30px 10px;
+}
+
+.reptil_side_list li a {
+ 
+    color: var(--content-color);
+    text-decoration: none;
+}
+
+.reptil_side_list li:hover{
+    background-color: var(--body-color);
+    border-top-left-radius: 80px 80px;
+    border: none;
+    color: var(--navbar-color);
+    
+}
+
+.reptil_side_list li:hover {
+
+    -webkit-transition: background-color 1.5s ease-out;
+    -moz-transition: background-color 1.5s ease-out;
+    -o-transition: background-color 1.5s ease-out;
+    transition: background-color 1.5s ease-out;
+}
+.reptil_side_list li a:hover{
+ 
+    color: var(--navbar-color);
+    
+}
+
+.reptil_section {
+    width: 100%;
+  
+    display: flex;
+    flex-direction: column;
+     
+}
+
+
+.reptil_sectionn
+.reptil_sectionn h2 {
+    margin-bottom: 30px;
+ 
+}
+
+.reptil_sectionn  p {
+    
+    margin-bottom: 20px;
+}
+.reptil_dynamic_content {
+    display: flex;
+    flex-direction: row;
+}
+
+.reptil_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    width: 450px;
+
+}
+
+.reptil-galry {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+   
+    padding-top: 10px;
+   
+    align-items: center;
+
+}
+
+
+
+
+
+
+
+
+.reptil-galry-img {
+    border-radius:50%;
+    width:200px;
+    height:200px;
+    background-color: red;
+}
+
+.hawsbil {
+    background-position: center;      
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url("../images/Reptiles/Hawksbill-Turtle1.png") ;
+}
+
+.lizard {
+    background-position: center;      
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url("../images/Reptiles/Frilled-lizard.png") ;
+}
+
+.perentie {
+    background-position: center;      
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url("../images/Reptiles/Perentie1.png") ;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ .reptil-galry-img img {
+        
+      display: none;
+    
+      }
+
+.reptil_section p {
+    padding: 10px;
+    padding-top: 40px;
+    font-size: 0.9rem;
+}
+
+.reptil_charact h3 {
+    text-align: center;
+    margin: 7px 0;
+}
+
+.repti_charact_items {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    list-style: inside;
+}
+
+.repti_charact_items li {
+    font-size: 0.8rem;
+}
+.repti_charact_items li::marker {
+    color: var(--content-color);
+    font-size: 1.5rem;
+
+}
