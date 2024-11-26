@@ -49,8 +49,8 @@ body {
 .navlinks a:hover {
     border: 2px solid white;
     padding: 0 1rem;
- 
- 
+
+}
 
 body {
     margin: 0;
@@ -179,8 +179,5 @@ footer {
     .footer-container {
         flex-direction: column; 
     }
-<<<<<<< HEAD
  
-=======
->>>>>>> origin/develop
 }
