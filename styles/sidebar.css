@@ -4,69 +4,48 @@
 
 :root {
     --sidebar-bkg-color :  #023E25;
-    --sidebar-color :  #A6EA01;
-    --active-color :  #3d4f14;
+    --sidebar-color :  #A6EA01; 
 }
 
-.sidebar {
+/*Side bar home page*/
+.asid-home-page {
     font-family: "League Spartan", sans-serif;
     background-color: var(--sidebar-bkg-color);
     color: var(--sidebar-color);
     width: 300px;
     padding: 70px 5px;
     margin: 0;
-    height: 100%;    
 }
 
-.sidebar h2 {
-    text-align: center;
-}
-
-.sidebar-nav {  
-   margin-top: 50px;
-   display: flex;
-   flex-direction: column;      
-   gap: 10px;
-   height: 100%;
-   align-items: center;
-}
-
-.sidebar-item {
+.links {
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    margin: 20px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid green;
+    align-items: center;
     cursor: pointer;
-    width: auto;
-    margin: 5px;
-
 }
 
-
-/*Button*/
-.animal-name {
-  cursor: pointer;
-  color: white;
-  width: 170px;
-  border: 1px solid green;
-  padding: 7px 3px 5px 0px;
-  background-color: transparent;
+.asid-home-links h2{
+    text-align: center;
+    color: var(--content-color);
 }
 
-.animal-name.active  {
+.links:hover {
+    background-color: #E4E4E4;
+    color: black;
+    border-top-left-radius: 50px;
+}
+
+.links:hover {
     -webkit-transition: background-color 1.5s ease-out;
     -moz-transition: background-color 1.5s ease-out;
     -o-transition: background-color 1.5s ease-out;
     transition: background-color 1.5s ease-out;
-} 
- 
- 
-
-.changeColor {
-    color: black;
-    font-weight: 1.2rem;
-}
-
-.active {
-    background-color: rgb(4, 158, 58);
-    
 }
 
 /*Toggel button*/
@@ -89,15 +68,14 @@
 }
 
 @media (max-width: 430px) {
-    .sidebar-nav {
-     
+    .sidebar-nav {  
         width: 250px;
         padding: 0;
         margin: 0;
         height: auto;      
     }
  
-    .sidebar {
+    .asid-home-page {
         cursor: pointer;
         width: 90px;
         position: absolute;
@@ -113,7 +91,7 @@
         display: block;
     }
 
-    .side-content{
+    .asid-home-links{
      display: none; 
     }
 
@@ -125,4 +103,43 @@
         margin: 0px;    
         transition: all 0.5s ease;  
     }
+}
+
+@media (max-width :768px ) {
+    .sidebar-nav {  
+        width: 250px;
+        padding: 0;
+        margin: 0;
+        height: auto;      
+    }
+ 
+    .asid-home-page {
+        cursor: pointer;
+        width: 90px;
+        position: absolute;
+        top: 10;
+        left: 0;
+        height: 100vh;
+        padding: 0;
+        transition: all 0.5s ease;      
+    }
+
+    .menu-btn {
+        margin: 5px;
+        display: block;
+    }
+
+    .asid-home-links{
+     display: none; 
+    }
+
+    .open {
+        height: 100%;
+        width: 300px;
+        display: block;
+        background-color: var(--sidebar-bkg-color);
+        margin: 0px;    
+        transition: all 0.5s ease;  
+    }
+    
 }
