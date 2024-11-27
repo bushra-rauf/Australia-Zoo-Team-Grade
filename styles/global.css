@@ -1,18 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 :root {
-    --color1: #023E25;
-    --color2: #A6EA01;
-    --color3: #E4E4E4;
-    --color4: #39735B;
-    --color5: #192822;
-    --color6: #4A981C;
+    --header-color: #023E25;
+    --primary-text-color: #A6EA01;
+    --secoundary-text-color: #E4E4E4;
+    --sidebar: #39735B;
+    --button-color: #192822;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    margin: 0;
+    font-family:'Spartan';
 }
 
 footer {
-    background-color: var(--color1); 
-    color: var(--color3); 
+    background-color: var(--header-color); 
+    color: var(--secoundary-text-color); 
     padding: 40px 20px;
-    font-family: 'Arial', sans-serif;
-    font-size: 14px;
+    font-size: 13px;
 }
   
 .footer-container {
@@ -30,22 +40,22 @@ footer {
 }
   
 .footer-section h3 {
-    color: var(--color2); 
+    color: var(--primary-text-color); 
     margin-bottom: 10px;
     text-transform: uppercase;
     font-size: 16px;
-    border-bottom: 2px solid var(--color2); 
+    border-bottom: 2px solid var(--primary-text-color); 
     padding-bottom: 5px;
 }
   
 .footer-section a {
     text-decoration: none;
-    color: var(--color3); 
+    color: var(--secoundary-text-color); 
     transition: color 0.3s ease;
 }
   
 .footer-section a:hover {
-    color: var(--color2); 
+    color: var(--primary-text-color); 
 }
   
 .quick-links ul {
@@ -62,8 +72,8 @@ footer {
     text-align: center;
     margin-top: 20px;
     padding-top: 10px;
-    border-top: 1px solid var(--color5);
-    color: var(--color3);
+    border-top: 1px solid var(--button-color);
+    color: var(--secoundary-text-color);
 }
   
 .footer-bottom p {
