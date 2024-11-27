@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display:grid;
+    place-items: center;
+}
+
+.slider-btns {
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    visibility:hidden;
+}
+
+.slider-btns button {
+    font-size: 30px;
+    font-weight: 500;
+    background-color: rgba(225, 20, 20, 0.5);
+    border: none;
+    color:white;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.slider {
+    height: auto;
+    width:auto;
+    position: relative;
+}
+
+.slider img{
+    width: 100%;
+    height: auto;
+}
+.slider-item,
+.hidden{
+    display:none;
+
+}
+    
+.active{
+    display: block;
+}
+.slider:hover .slider-btns{
+    visibility: visible;
+}
