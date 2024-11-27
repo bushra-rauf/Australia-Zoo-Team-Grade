@@ -1,4 +1,4 @@
-const sidebar = document.querySelectorAll(".sidebar-item"); 
+const sidebar = document.querySelectorAll(".animal-name"); 
 let spanbuttn = document.querySelector("span");
 
 sidebar.forEach(sidebar => {

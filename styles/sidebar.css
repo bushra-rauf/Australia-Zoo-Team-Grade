@@ -22,57 +22,51 @@
     text-align: center;
 }
 
-.sidebar-nav {
-   padding-left: 10px;
+.sidebar-nav {  
    margin-top: 50px;
    display: flex;
-   flex-direction: column;    
-   width:150px;
+   flex-direction: column;      
    gap: 10px;
    height: 100%;
+   align-items: center;
 }
 
 .sidebar-item {
     padding: 10px;
-    width: 260px;
     cursor: pointer;
+    width: auto;
+    margin: 5px;
+
 }
 
-.sidebar-item.active  {
+
+/*Button*/
+.animal-name {
+  cursor: pointer;
+  color: white;
+  width: 170px;
+  border: 1px solid green;
+  padding: 7px 3px 5px 0px;
+  background-color: transparent;
+}
+
+.animal-name.active  {
     -webkit-transition: background-color 1.5s ease-out;
     -moz-transition: background-color 1.5s ease-out;
     -o-transition: background-color 1.5s ease-out;
     transition: background-color 1.5s ease-out;
 } 
-.sidebar-item a:hover{ 
-    color: black;
-    font-weight: bold;
-}
-
-.sidebar-item a{
-    font-size: 0.7rem;
-    color: var(--sidebar-color);
-    text-decoration: none; 
-    padding: 10px;
-}
-
- span {
-    background-color: white;
-    padding: 2px 7px;
-    float: right;
-    color: black;
-    font-weight: bolder;    
- }
+ 
+ 
 
 .changeColor {
-    background-color: var(--sidebar-color);  
     color: black;
     font-weight: 1.2rem;
 }
 
 .active {
-    background-color: var(--active-color);
-    color: black;
+    background-color: rgb(4, 158, 58);
+    
 }
 
 /*Toggel button*/
