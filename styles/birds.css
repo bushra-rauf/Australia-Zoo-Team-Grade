@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.main-content {
+    display: grid;
+    grid-template-columns: 35vh 1fr;
+    height: 100vh;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #023E25;
+    text-align: center;
+}
+
+.sidebar a {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    color: #c9bb9f;
+    text-decoration: underline;
+}
+
+.sidebar img {
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    border-right: 1px solid #c9bb9f5e;
+    border-left: 1px solid #c9bb9f5e;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sidebar img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.bird-content {
+    background-color: #c9bb9f;
+    color: #003f02;
+    padding: 20px;
+    text-align: center;
+}
+
+.messege {
+    padding: 40px 40px 0 40px;
+    line-height: 1.5;
+}
+
+.messege p {
+    font-weight: 600;
+}
+
+.messege h2 {
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+.bird-img {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    height: 50vh;
+}
+
+.bird-card {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.bird-card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid #023E25;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+.bird-card .bird-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    background: rgba(15, 15, 15, 0.8); 
+    width: 100%;
+    height: 100%;
+    opacity: 0; 
+}
+
+.bird-card:hover .bird-description {
+    opacity: 1; 
+    border-radius: 10px;
+}
+
+.ourbirds {
+    padding: 0 40px 40px 40px ;
+}
+
+.ourbirds h3 {
+    margin-top: 0;
+}
+
+.ourbirds p {
+    font-weight: 600;
+}
+
+.bird-details img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    border: 2px solid #003f02;
+}
+
+#description-container {
+    margin-top: 20px;
+}
+
+#see-more-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#see-more-button:hover {
+    background-color: #0056b3;
+}
+
+
+@media (max-width: 768px) {
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .sidebar {
+        flex-direction: row;
+        gap: 20px;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .sidebar h3 {
+        display: none;
+    }
+
+    .sidebar img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .bird-content {
+        padding: 10px;
+    }
+
+    .bird-card {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .bird-card img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .messege {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .messege h2 {
+        font-size: 20px;
+    }
+
+    .bird-details img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    #see-more-button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
