@@ -7,7 +7,7 @@
     --color6: #4A981C;
 }
 
-.header {
+.header-b{
     background-color: #023E25;
     display: flex;
     justify-content:space-between;
@@ -131,6 +131,7 @@ footer {
     }
     .header-b{
         display: flex;
+        background-color: #023E25;
         flex-direction: column;
         justify-content: center;
         align-items: center;
