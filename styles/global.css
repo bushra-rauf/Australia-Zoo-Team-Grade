@@ -5,6 +5,8 @@
     --color4: #39735B;
     --color5: #192822;
     --color6: #4A981C;
+    --sidebar-bkg-color :  #023E25;
+    --sidebar-color :  #A6EA01; 
 } 
 
 body {
@@ -93,22 +95,10 @@ body {
     border: 2px solid white;
     padding: 0 1rem;
 }
-
-
-/*Side Bare*/
-
-* {
-    margin: 0;
-}
-
-:root {
-    --sidebar-bkg-color :  #023E25;
-    --sidebar-color :  #A6EA01; 
-}
+ 
 
 /*Side bar home page*/
-.asid-home-page {
-    
+.asid-home-page {    
     font-family: "League Spartan", sans-serif;
     background-color: var(--sidebar-bkg-color);
     color: var(--sidebar-color);
@@ -132,8 +122,7 @@ body {
 }
 
 .asid-home-links h2{
-    text-align: center;
-    color: var(--content-color);
+    text-align: center;    
 }
 
 .links:hover {
