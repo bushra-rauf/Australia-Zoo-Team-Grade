@@ -57,10 +57,12 @@ html, body {
 .navbar a.active {
     color: white;
     border-bottom: 1px solid #c9bb9f ;
-=======
-body {
-    margin: 0;
 }
+
+.body {
+    margin: 0;
+} 
+
 .header{
     background-color: green;
     padding: 15px;
@@ -181,8 +183,43 @@ footer {
       @media (max-width: 768px) {
     .footer-container {
         flex-direction: column; 
-    
+        align-items: center;
+        gap: 15px;
     }
+
+    .footer-section {
+        flex: 1 1 100%; 
+        text-align: center; 
+        margin-bottom: 15px; 
+    }
+
+    .footer-section h3 {
+        font-size: 14px; 
+        margin-bottom: 8px;
+    }
+
+    .footer-section p,
+    .footer-section li {
+        font-size: 12px; 
+    }
+
+    .footer-section a {
+        font-size: 12px; 
+    }
+
+    .quick-links ul {
+        padding: 0;
+    }
+
+    .quick-links li {
+        margin-bottom: 10px; 
+    }
+
+    .footer-bottom {
+        font-size: 12px; 
+        padding-top: 10px;
+    }
+
     .header-b{
         display: flex;
         background-color: #023E25;
