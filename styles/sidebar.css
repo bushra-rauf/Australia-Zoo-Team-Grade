@@ -9,12 +9,14 @@
 
 /*Side bar home page*/
 .asid-home-page {
+    
     font-family: "League Spartan", sans-serif;
     background-color: var(--sidebar-bkg-color);
     color: var(--sidebar-color);
     width: 300px;
     padding: 70px 5px;
-    margin: 0;
+    margin: 50px 0px 50px 100px;
+    
 }
 
 .links {
@@ -83,6 +85,7 @@
         left: 0;
         height: 100vh;
         padding: 0;
+        margin: 50px 0px 50px 0px;
         transition: all 0.5s ease;      
     }
 
@@ -115,8 +118,9 @@
  
     .asid-home-page {
         cursor: pointer;
-        width: 90px;
+        margin: 0;
         position: absolute;
+        width: 100px;
         top: 10;
         left: 0;
         height: 100vh;
@@ -140,6 +144,12 @@
         background-color: var(--sidebar-bkg-color);
         margin: 0px;    
         transition: all 0.5s ease;  
+    } 
+}
+
+@media (max-width: 853px) {
+    .asid-home-page {
+        margin: 50px 0;
     }
-    
+
 }
