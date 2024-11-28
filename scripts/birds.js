@@ -32,7 +32,7 @@ const BIRDS = [
         length: "65 cm",
         weight: "900 grams",
         found: "SE Australia",
-        image: "./images/Birds/Yellow-Tailed2.png",
+        image: "./images/Birds/yellow-tailed2.png",
         icon: "./images/icons/Yellow-Tailed.png"
     }
 ];
