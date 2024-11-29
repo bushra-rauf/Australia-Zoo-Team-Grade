@@ -30,8 +30,7 @@ html, body {
     z-index: 1000;
   /*  position: sticky;
     top: 0%;*/
-    
-}
+ }
  
 .page-title h2 {
     font-weight: 400;
@@ -59,19 +58,18 @@ html, body {
 .navbar a.active {
     color: white;
     border-bottom: 1px solid #c9bb9f ;
-           
 }
 
 .dw-pa {
        text-align:center;
-
 }
+
 .dw-pa h1{
     font-size: 20px;
     color: white;
     text-align: left;
-
 }
+
 .logo img{
     height: 60px;
     width: 60px;
@@ -84,11 +82,9 @@ html, body {
     color: white;
 }
     
-
 .navlinks a {
     text-decoration: none;
     color: white;
-    
 }
 
 .navlinks a:hover {
@@ -259,6 +255,7 @@ footer {
         flex-direction: row;
         justify-content: center;
     }
+  
     .navbar{
         background-color: var(--header-color);
         position: fixed;
