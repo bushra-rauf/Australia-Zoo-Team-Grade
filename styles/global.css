@@ -110,7 +110,7 @@ html, body {
 /*Sidebar*/
 
 /*Side bar home page*/
-.asid-home-page {    
+/* .asid-home-page {    
     font-family: "League Spartan", sans-serif;
     background-color: var(--sidebar-bkg-color);
     color: var(--primary-text-color);
@@ -150,7 +150,7 @@ html, body {
     transition: background-color 1.5s ease-out;
 }
 
-/*Toggel button*/
+/*Toggel button
 
 .menu-btn {
     display: flex;
@@ -165,7 +165,7 @@ html, body {
     margin: 2px;
     width: 17px;
     border: solid white 1px;
-}
+} */
 
 
 footer {
@@ -299,12 +299,12 @@ footer {
         display: block;
         cursor: pointer;
     }
-    .sidebar {
+    /* .sidebar {
         margin: 50px 0 0 0;
         padding: 0;
     }
-
- /*Side bar responsive*/
+/* 
+ /*Side bar responsive
     
     .asid-home-page {
         height: 100vh;
@@ -327,8 +327,8 @@ footer {
         width: 300px;
         padding: 0;
         background-color: var(--header-color);
-    }
-  
+    } */
+   
     footer {
         width: auto;
     }
@@ -391,7 +391,7 @@ footer {
         display: block;
         cursor: pointer;
     }
-    .sidebar {
+    /* .sidebar {
         margin: 50px 0 0 0;
         padding: 0;
     }
@@ -416,7 +416,7 @@ footer {
     .menu-btn {
         margin: 10px;
         display: block;
-    }
+    } */
 
 .footer-container {
     flex-direction: column; 
