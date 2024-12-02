@@ -16,8 +16,12 @@
     box-sizing: border-box;
 }
 
-html, body {
+html {
     height: 100vh;
+}
+
+body {
+    height: 100%;
     margin: 0;
     font-family:'Spartan';
 }
@@ -260,10 +264,6 @@ footer {
         display: block;
         cursor: pointer;
     }
-    .sidebar {
-        margin: 50px 0 0 0;
-        padding: 0;
-    }
 
  /*Side bar responsive*/
     
@@ -347,10 +347,6 @@ footer {
     .menu-btn-navbar {
         display: block;
         cursor: pointer;
-    }
-    .sidebar {
-        margin: 50px 0 0 0;
-        padding: 0;
     }
 
     .asid-home-page {
@@ -440,11 +436,6 @@ footer {
         display: block;
         cursor: pointer;
     }
-    .sidebar {
-        margin: 50px 0 0 0;
-        padding: 0;
-    }
- 
 
 }    
 
