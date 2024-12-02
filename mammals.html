@@ -1,70 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mammals</title>
+    <title>Homepage</title>
+    <link rel="stylesheet" href="./styles/sidebar.css">
+    <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/mammals.css">
-    <script src="./scripts/mammals.js" defer> </script>
-    <!-- <script type="module" src="https://ionic.io/ionicons/usage#:~:text=%3Cscript%20type%3D%22module%22%20src%3D%22https%3A//unpkg.com/ionicons%407.1.0/dist/ionicons/ionicons.esm.js%22%3E%3C/script%3E%0A%3Cscript%20nomodule%20src%3D%22https%3A//unpkg.com/ionicons%407.1.0/dist/ionicons/ionicons.js%22%3E%3C/script%3E" defer>
-        </script> -->
-    
-    <ion-button aria-label="Favorite">
-        <ion-icon name="heart" aria-hidden="true"></ion-icon>
-      </ion-button>
+    <script src="./scripts/sidebar.js" defer></script>
+    <script src="./scripts/index.js" defer></script>
 </head>
 <body>
   <header class="header-b">
     <div class="logo-b">
-        <img src="./images/zoologo xx..png" alt="logo">
+        <img src="./images/icons/zoologo xx..png" alt="logo">
         
     </div>
-    <div class="page-title"><h2>DJURPARK AUSTRALIAN ZOO</h2></div>
+    <div class="page-title">DJURPARK AUSTRALIAN ZOO</div>
+    <div class="menu-btn-navbar">
+        <div class="btnn-line"></div>
+        <div class="btnn-line"></div>
+        <div class="btnn-line"></div>
+
+    </div>
     <div class="navbar">
-        <ul>
-            <li><a href="./index.html"class="active">Home</a></li>
-            <li><a href="./mammals.html">Mammals</a></li>
+        <ul class="navbar-list">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./mammals.html" class="active">Mammals</a></li>
             <li><a href="./birds.html">Birds</a></li>
             <li><a href="./reptiles.html">Reptiles</a></li>
             <li><a href="./about.html">About us</a></li>
         </ul>
     </div>
 </header>
-    <div class="grid_cell">
-                    <p>rabbit</p>
-                    <img class="rabbits" src="./images/animals-8602447_1280.rab.webp" alt="image">
 
-                </div>
-
-                <div class="grid_cell">
-                    <p>monkeys</p>
-                    <img class="course_img" src="./images/pexels-photo-234054.mon.jpeg" alt="image">
-                </div>
-
-                <div class="grid_cell">
-                    <p>cat</p>
-                    <img class="course_img" src="./images/pexels-photo-416160slcat..jpeg" alt="image">
-                </div>
-
-                <div class="grid_cell">
-                    <p>squrrel</p>
-                    <img class="course_img" src="./images/pexels-photo-460775.sq.jpeg" alt="image">
-
-                </div>
-                <div class="grid_cell">
-                    <p>dog</p>
-                    <img class="course_img" src="./images/pexels-photo-1198802dog..jpeg" alt="image">
-
-                </div>
-
-                <div class="grid_cell">
-                    <p>kangaroo</p>
-                    <img class="course_img" src="./images/free-photo-of-a-kangaroo-and-her-baby-are-standing-in-the-grass..jpeg" alt="image">
-                    <div class="course-content"></div>
-
-                </div>
-    </div>
-    </section>
 </body>
 </html>
