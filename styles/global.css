@@ -156,11 +156,7 @@ footer {
         flex-direction: row;            
     }
 
-    .team-name {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
+  
   
     .navbar{
         background-color: var(--header-color);
@@ -249,11 +245,7 @@ footer {
         flex-direction: row;            
     }
 
-    .team-name {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
+   
     .navbar{
         background-color: var(--header-color);
         position: fixed;
@@ -345,9 +337,9 @@ footer {
         
     }    
     .navbar{
-        background-color: var(--header-color);
+       background-color: var(--header-color);
         position: fixed;
-        top: 100px;
+        top: 80px;
         right: 0px;
         width: 100%;
         margin: 0;
@@ -355,7 +347,18 @@ footer {
         display: flex;
         flex-direction: column;
         text-align: center;
-        display: none;      
+        display: none;  
+        align-items: center;    
+
+    }
+    .navbar-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .navbar-list li {
+        align-items: center;
     }
     .toggle-header{
         display: block;  
