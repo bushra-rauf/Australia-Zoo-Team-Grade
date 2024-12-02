@@ -215,8 +215,6 @@ footer {
         flex-direction: row;            
     }
 
-  
-  
     .navbar{
         background-color: var(--header-color);
         position: fixed;
@@ -250,8 +248,7 @@ footer {
          
     }
     .navbar ul li a {
-        width: 100px;
-     
+        width: 100px;    
         margin: 0;
         padding: 0;
         text-align: center;
@@ -260,40 +257,7 @@ footer {
         display: block;
         cursor: pointer;
     }
-    .sidebar {
-        margin: 50px 0 0 0;
-        padding: 0;
-    }
-
- /*Side bar responsive*/
     
-    .asid-home-page {
-        height: 100vh;
-        margin: 50px 0;
-        padding: 0px;
-        width: 100px;
-    }
-    .asid-home-links {
-        display: none;        
-    }
-
-    .menu-btn {
-        margin: 10px;
-        display: block;
-    }
-
-    .open{
-        height: 100vh;
-        display: block;
-        width: 300px;
-        padding: 0;
-        background-color: var(--header-color);
-    }
-  
-    footer {
-        width: auto;
-    }
-
 }
 
    
@@ -338,41 +302,15 @@ footer {
          
     }
     .navbar ul li a {
-        width: 100px;
-     
+        width: 100px;  
         margin: 0;
         padding: 0;
         text-align: center;
     }
+    
     .menu-btn-navbar {
         display: block;
         cursor: pointer;
-    }
-    .sidebar {
-        margin: 50px 0 0 0;
-        padding: 0;
-    }
-
-    .asid-home-page {
-        height: 100vh;
-        margin: 50px 0;
-        padding: 0px;
-        width: 100px;
-    }
-    .asid-home-links {
-        display: none;        
-    }
-    .open{
-        height: 100vh;
-        display: block;
-        width: 300px;
-        padding: 0;
-        background-color: var(--header-color);
-    }
-    
-    .menu-btn {
-        margin: 10px;
-        display: block;
     }
 
 .footer-container {
@@ -440,10 +378,7 @@ footer {
         display: block;
         cursor: pointer;
     }
-    .sidebar {
-        margin: 50px 0 0 0;
-        padding: 0;
-    }
+ 
  
 
 }    
