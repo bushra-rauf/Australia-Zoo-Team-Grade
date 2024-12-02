@@ -10,11 +10,11 @@ sidebar.forEach(sidebar => {
 })
  
 
-const togglebuttn = document.querySelector(".menu-btn");
-togglebuttn.addEventListener("click", () =>{
+//*const togglebuttn = document.querySelector(".menu-btn");
+//*togglebuttn.addEventListener("click", () =>{
    // document.querySelector("span").classList.toggle("open")
-    document.querySelector(".side-content").classList.toggle("open")
-})
+    //document.querySelector(".side-content").classList.toggle("open")
+//*
 
 
 
