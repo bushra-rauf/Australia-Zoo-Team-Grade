@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             name: "Souad",
-            image: "images/souad.jpg",
+            image: "images/Souad.jpg",
             details: "Souad is a project manager with 10 years of experience."
         },
         {
