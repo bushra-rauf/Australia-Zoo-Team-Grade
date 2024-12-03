@@ -64,6 +64,70 @@ body {
     width: 18px;  
     border: solid #A6EA01 1px;
 }
+
+/*Sidebar*/
+
+/*Side bar home page*/
+/* .asid-home-page {    
+    font-family: "League Spartan", sans-serif;
+    background-color: var(--sidebar-bkg-color);
+    color: var(--primary-text-color);
+    width: 300px;
+    padding: 70px 5px;
+    margin: 50px 0px 50px 100px;
+    
+}
+
+.links {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    margin: 20px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid green;
+    align-items: center;
+    cursor: pointer;
+}
+
+.asid-home-links h2{
+    text-align: center;    
+}
+
+.links:hover {
+    background-color: #E4E4E4;
+    color: black;
+    border-top-left-radius: 50px;
+}
+
+.links:hover {
+    -webkit-transition: background-color 1.5s ease-out;
+    -moz-transition: background-color 1.5s ease-out;
+    -o-transition: background-color 1.5s ease-out;
+    transition: background-color 1.5s ease-out;
+}
+
+/*Toggel button
+
+.menu-btn {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    padding-bottom: 40px;
+    display: none;
+    
+}
+
+.btn-line { 
+    margin: 2px;
+    width: 17px;
+    border: solid white 1px;
+} */
+
+
+
+
  .navbar ul {
     display: flex;
     gap: 25px;
@@ -167,144 +231,16 @@ footer {
     padding: 0;
     
   }
-  
-  @media (max-width: 768px) {
-    .footer-container {
-      flex-direction: column; 
-      align-items: center; 
-      gap: 15px; 
-    }
-  
-    .footer-section {
-      flex: 1 1 100%; 
-      text-align: center;
-      margin-bottom: 15px;
-    }
-  
-    .footer-section h3 {
-      font-size: 14px; 
-      margin-bottom: 8px; 
-    }
-  
-    .footer-section p,
-    .footer-section li {
-      font-size: 12px; 
-    }
-  
-    .footer-section a {
-      font-size: 12px; 
-    }
-  
-    .quick-links ul {
-      padding: 0;
-    }
-  
-    .quick-links li {
-      margin-bottom: 10px; 
-    }
-  
-    .footer-bottom {
-      text-align: center;
-      font-size: 12px;
-      padding-top: 10px; 
-    }  
-
- 
-}
-
-@media (max-width: 430px) {
-    /*Header responsive*/
-    .header-b {
-        display: flex;
-        flex-direction: row;            
-    }
-
-  
-  
-    .navbar{
-        background-color: var(--header-color);
-        position: fixed;
-        top: 100px;
-        right: 0px;
-        width: 100%;
-        margin: 0;
-        transition: all .5s;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        display: none;       
-    }
-    .toggle-header{
-        display: block;  
-        transition: all .5s;  
-    }
-
-    .toggle-header ul {
-        display: flex;
-        flex-direction: column;
-        transition: all .5s;
-    }
-
-    .navbar ul li {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        margin: 0;
-        padding: 5px;
-         
-    }
-    .navbar ul li a {
-        width: 100px;
-     
-        margin: 0;
-        padding: 0;
-        text-align: center;
-    }
-    .menu-btn-navbar {
-        display: block;
-        cursor: pointer;
-    }
-
- /*Side bar responsive*/
-    
-    .asid-home-page {
-        height: 100vh;
-        margin: 50px 0;
-        padding: 0px;
-        width: 100px;
-    }
-    .asid-home-links {
-        display: none;        
-    }
-
-    .menu-btn {
-        margin: 10px;
-        display: block;
-    }
-
-    .open{
-        height: 100vh;
-        display: block;
-        width: 300px;
-        padding: 0;
-        background-color: var(--header-color);
-    }
-  
-    footer {
-        width: auto;
-    }
-
-}
-
    
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    .header-b {
+    .header-b{
         display: flex;
-        flex-direction: row;            
-    }
+        background-color: #023E25;
+        align-items: center;
+        font-size: 10px;
+        }
 
-   
     .navbar{
         background-color: var(--header-color);
         position: fixed;
@@ -349,7 +285,11 @@ footer {
         cursor: pointer;
     }
 
-    .asid-home-page {
+    /* .sidebar {
+        margin: 50px 0 0 0;
+        padding: 0;
+    }
+       .asid-home-page {
         height: 100vh;
         margin: 50px 0;
         padding: 0px;
@@ -369,20 +309,49 @@ footer {
     .menu-btn {
         margin: 10px;
         display: block;
-    }
+    } */
 
-.footer-container {
-    flex-direction: column; 
+    .footer-container {
+        flex-direction: column; 
+        align-items: center; 
+        gap: 15px; 
+      }
     
- }
-.header-b{
-    display: flex;
-    background-color: #023E25;
-    align-items: center;
-    font-size: 10px;
-    }
+      .footer-section {
+        flex: 1 1 100%; 
+        text-align: center;
+        margin-bottom: 15px;
+      }
     
-}
+      .footer-section h3 {
+        font-size: 14px; 
+        margin-bottom: 8px; 
+      }
+    
+      .footer-section p,
+      .footer-section li {
+        font-size: 12px; 
+      }
+    
+      .footer-section a {
+        font-size: 12px; 
+      }
+    
+      .quick-links ul {
+        padding: 0;
+      }
+    
+      .quick-links li {
+        margin-bottom: 10px; 
+      }
+    
+      .footer-bottom {
+        text-align: center;
+        font-size: 12px;
+        padding-top: 10px; 
+      }  
+  
+   }
 /* Responsive Adjustments */
 @media (max-width: 430px){
     .header-b {
@@ -425,6 +394,16 @@ footer {
         flex-direction: column;
         transition: all .5s;
     }
+
+    .navbar ul li {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+        padding: 5px;
+         
+    }
+
     .navbar ul li a {
         width: 100px;
      
@@ -435,6 +414,37 @@ footer {
     .menu-btn-navbar {
         display: block;
         cursor: pointer;
+    }
+  /* .sidebar {
+        margin: 50px 0 0 0;
+        padding: 0;
+    } 
+       Side bar responsive 
+       .asid-home-page {
+        height: 100vh;
+        margin: 50px 0;
+        padding: 0px;
+        width: 100px;
+    }
+    .asid-home-links {
+        display: none;        
+    }
+
+    .menu-btn {
+        margin: 10px;
+        display: block;
+    }
+
+    .open{
+        height: 100vh;
+        display: block;
+        width: 300px;
+        padding: 0;
+        background-color: var(--header-color);
+    } */
+   
+    footer {
+        width: auto;
     }
 
 }    
