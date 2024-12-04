@@ -54,3 +54,27 @@ function generateAnimalList() {
 
 // Call the generateAnimalList function to generate the animal list when the page loads
 document.addEventListener('DOMContentLoaded', generateAnimalList);
+
+function showAnimal(index) {
+    const animalInfo = document.getElementById('animal-info');
+    let animal = animals[index];
+    const groupLink = {
+        Mammal: "mammals.html",
+        Reptile: "reptiles.html",
+        Bird: "birds.html"
+    };
+
+    animalInfo.innerHTML = `
+        <img src="${animal.img}" alt="${animal.name}">
+        <h2>${animal.name}</h2>
+        <p>${animal.description.substring(0, 200)}...</p>
+        <p>Diet: ${animal.diet}</p>
+        <p>Group: <a href="${groupLink[animal.group]}" target="_blank">${animal.group}</a></p>
+    `;
+} 
+// Add event listeners to sidebar links
+document.querySelectorAll('#animal-list a').forEach((link, index) => {
+    link.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default link behavior
+        showAnimal(index); 
+    })})
