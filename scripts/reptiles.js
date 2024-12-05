@@ -35,23 +35,11 @@ let Perentie = new Reptile("Perentie", "20 years", "./images/Reptiles/Perentie2.
             , "2.5 m", "20 kg", "Deserts") ;
  
 
-// console.log("hello")
-// console.log(frillneckedlizard.name)
-// console.log(reptilesNameClick)
-// console.log(frillneckedlizard.description)
-
 //define the array of Reptiles
 let reptiles = [frillneckedlizard, HawksbillTurtle, Perentie];
 
 //Create a variable for nave list
 let ul = document.querySelector(".sidbar-links");
-
-//for(let i = 0; i < reptiles.length; i++) {
- //  let li = document.createElement("li");
- //   li.textContent = reptiles[i].name;
- //   ul.appendChild(li)
-
-//}
 
 //loop on Reptiles item to replace the page content and create eventListener to display each animals content
 reptiles.forEach(item => {
@@ -111,29 +99,27 @@ reptiles.forEach(item => {
     
 });
 
-//active link
-function removeEventListener() {
-    //stuck on how to remove eventlistener and get back to the first page intialize the page
-  //  animalLists.removeEventListener("click", callFunction)
-    
-}
-
 
 //Active class for active links should be here ander the reptiles foreach in order to function
 const animalLists = document.querySelectorAll(".animals-list");
 
 animalLists.forEach(link => {
-    link.addEventListener("click", function() {
-        animalLists.forEach(nav => nav.classList.remove("activee"))
-        this.classList.add("activee");
-      //  animalLists.forEach(item => item.removeChild(p) )
-     //  if(!this.dataset.clicked){
-     //       this.setAttribute("data-clicked", "true");                   
-      //  }else {
-       //     this.removeAttribute("data-clicked"); 
-      //      showElementContainerList.remove()              
-           // animalLists.addEventListener("click", removeEventListener)          
-          // }
-        })
-    }
-)
+   link.addEventListener("click", function() {   
+       animalLists.forEach(nav => nav.classList.remove("activee"));
+       this.classList.add("activee");
+         
+    })
+} )
+
+addEventListener("dblclick", (e) => {
+    window.location.href = "reptiles.html";
+
+});
+
+const classes = ["frillClass", "hawkClass", "perentieClass"];
+const links = document.querySelectorAll(".animals-list");
+
+links.forEach((link, index) => {
+    link.classList.add(classes[index]);
+    
+});
