@@ -1,6 +1,7 @@
 //Side-bare responsive to be copy to home page
 const togglButton = document.querySelector(".menu-btnn");
 let asidBarShow = document.querySelector(".asid-home-page-reptiles");
+let togglMain = document.querySelector(".reptile-fromjs")
 //let animalsLink = document.querySelectorAll(".animals-list") ;
 togglButton.addEventListener("click", () =>{
    asidBarShow.classList.toggle("open");
@@ -9,6 +10,11 @@ togglButton.addEventListener("click", () =>{
     
 });
 
+togglMain.addEventListener("click", () =>{
+    asidBarShow.classList.toggle("open");   
+ });
+
+  
 //Create and initialize an object instance on a class
 class Reptile{
     constructor (name, lifespan, image, group,  food, description, length, weight, found) {
