@@ -65,22 +65,19 @@
 /*These classes are created in JS*/
  
 .sidbar-links  .frillClass {
-   border-left: 2px solid var(--primary-text-color);
-    
+   border-left: 3px solid var(--primary-text-color);
     
 }
 
 .sidbar-links  .hawkClass {
-    border-top: 2px solid var(--primary-text-color);
+    border-left: 3px solid rgb(88, 230, 147);
 
 }
 
 .sidbar-links  .perentieClass {
-    border-left: 2px solid var(--primary-text-color);
+    border-left: 3px solid rgb(220, 106, 106);
    
-
 }
-
 
 .reptiles-animale {
     display: flex;
