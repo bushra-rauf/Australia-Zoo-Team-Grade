@@ -10,17 +10,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const teamMembers = [
         {
             name: "Moshira",
-            image: "images/Moshira3.jpg",
+            image: "images/moshira3.jpg",
             details: "Hello! My name is Moshira, I studied software and graduated in 2013 in Sudan. I am currently studying front-end development."
         },
         {
             name: "Bushra",
-            image: "images/Bushra2.jpg",
+            image: "images/bushra2.jpg",
             details: "Hi! My name is Bushra Raouf, an MBA holder from England, and now I'm focusing on web development, improving my skills with JavaScript."
         },
         {
             name: "Souad",
-            image: "images/Souad2.jpg",
+            image: "images/souad2.jpg",
             details: "Hello! My name is Souad. I graduated as a web developer in 2019 and am passionate about front-end development and design."
         },
         {
