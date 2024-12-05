@@ -38,16 +38,40 @@
 </header>
 <div class="container-about">
     <aside class="sidebar-about">
-        <h2>Our Team</h2>
+        <h2>NATURE NINJAS</h2>
         <ul id="team-list"></ul>
     </aside>
     <main class="main-content">
         <h1>Welcome to Our Team Page</h1>
         <div id="default-message" class="default-message">
-            Click on a team member's name to learn more about them.
+            We are a group of passionate individuals with diverse backgrounds,
+            dedicated to creating beautiful and functional websites.
+            Click on a team member's image to learn more about them. 
+        </div>
+        <div class="team-container">
+            <div class="team-member" onclick="showMemberDetails('Moshira')">
+                <img src="images/Moshira3.jpg" alt="Moshira" class="team-member-img"/>
+                <p>Moshira</p>
+            </div>
+            <div class="team-member" onclick="showMemberDetails('Bushra')">
+                <img src="images/Bushra2.jpg" alt="Bushra" class="team-member-img"/>
+                <p>Bushra</p>
+            </div>
+            <div class="team-member" onclick="showMemberDetails('Souad')">
+                <img src="images/Souad2.jpg" alt="Souad" class="team-member-img"/>
+                <p>Souad</p>
+            </div>
+            <div class="team-member" onclick="showMemberDetails('Meaza')">
+                <img src="images/meaza.jpg" alt="Meaza" class="team-member-img"/>
+                <p>Meaza</p>
+            </div>
+            <div class="team-member" onclick="showMemberDetails('Ranjitha')">
+                <img src="images/ranjitha.jpg" alt="Ranjitha" class="team-member-img"/>
+                <p>Ranjitha</p>
+            </div>
         </div>
         <div id="member-info" class="member-info">
-            <img id="member-image" src="" alt="Team Member" />
+            <img id="member-image" src="" />
             <div id="member-details"></div>
         </div>
     </main>

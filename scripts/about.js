@@ -5,33 +5,33 @@ document.addEventListener('DOMContentLoaded', () => {
     const memberDetails = document.getElementById('member-details');
     const defaultMessage = document.getElementById('default-message');
 
-    let activeMember = null;
+    let activeMember = null; 
 
     const teamMembers = [
         {
             name: "Moshira",
-            image: "images/Moshira.jpg",
-            details: "Moshira is a Frontend Developer in Future Games."
+            image: "images/Moshira3.jpg",
+            details: "Hello! My name is Moshira, I studied software and graduated in 2013 in Sudan. I am currently studying front-end development."
         },
         {
             name: "Bushra",
-            image: "images/bushra.jpg",
-            details: "Bushra is a designer who loves creating intuitive user experiences."
+            image: "images/Bushra2.jpg",
+            details: "Hi! My name is Bushra Raouf, an MBA holder from England, and now I'm focusing on web development, improving my skills with JavaScript."
         },
         {
             name: "Souad",
-            image: "images/Souad.jpg",
-            details: "Souad is a project manager with 10 years of experience."
+            image: "images/Souad2.jpg",
+            details: "Hello! My name is Souad. I graduated as a web developer in 2019 and am passionate about front-end development and design."
         },
         {
             name: "Meaza",
             image: "images/meaza.jpg",
-            details: "Meaza is a cybersecurity expert."
+            details: "Hi! I’m Meaza, a 22-year-old student passionate about learning and teamwork. I worked on the bird section of this project."
         },
         {
             name: "Ranjitha",
             image: "images/ranjitha.jpg",
-            details: "Ranjitha is a data scientist specializing in machine learning."
+            details: "Hello! My name is Ranjitha Velusamy. I have an MBA and am currently working on front-end programming in Sweden."
         }
     ];
 
@@ -45,27 +45,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
     teamList.addEventListener('click', (e) => {
         if (e.target.tagName === 'LI') {
+            const memberName = e.target.textContent;
+            const member = teamMembers.find(m => m.name === memberName);
+
             const isActive = e.target === activeMember;
 
             if (activeMember) {
                 activeMember.classList.remove('active');
-                activeMember = null;
             }
 
             if (!isActive) {
-                const { image, details } = e.target.dataset;
-
                 e.target.classList.add('active');
                 activeMember = e.target;
 
                 memberInfo.style.display = 'block';
-                memberImage.src = image;
-                memberImage.alt = `${e.target.textContent}'s image`;
-                memberDetails.innerHTML = `<h2>${e.target.textContent}</h2><p>${details}</p>`;
+                memberImage.src = member.image;
+                memberImage.alt = `${member.name}'s image`;
+                memberDetails.innerHTML = `<h2>${member.name}</h2><p>${member.details}</p>`;
                 defaultMessage.style.display = 'none';
             } else {
                 memberInfo.style.display = 'none';
                 defaultMessage.style.display = 'block';
+                activeMember = null;
             }
         }
     });
