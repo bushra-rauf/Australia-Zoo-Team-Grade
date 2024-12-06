@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             name: "Moshira",
             image: "images/moshira3.jpg",
-            details: " Hello! My name is Moshira,I studied software and graduated in 2013 in Sudan. I am currently studying this interesting course on front-end development, html, css and javascript. I am looking forward to learning more from it. I worked on the aboutus section"
+            details: " Hello! My name is Moshira,I studied software and graduated in 2013 in Sudan. I am currently studying this interesting course on front-end development, html, css and javascript. I am looking forward to learning more from it. I worked on the aboutus section."
         },
         {
             name: "Bushra",
