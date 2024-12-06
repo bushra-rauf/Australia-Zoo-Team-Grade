@@ -11,6 +11,11 @@
     font-family: Arial, sans-serif;
  
 }
+@media (max-width: 768px) {
+    .messege h2 {
+        font-size: 20px;
+    }
+}
  
  
 body {
@@ -416,9 +421,6 @@ body {
     --footer-accent: #a6ea01;
 };
 
-element class.style {
-
-}
 @media (max-width: 768px) {
     .messege h2 {
         font-size: 20px;
@@ -448,6 +450,67 @@ h2 {
         margin-bottom: 20px;
     }
 }
+@media (max-width: 768px) {
+    .mammals-img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+    @media (max-width: 768px) {
+        .mammals-page {
+            padding: 10px;
+        }
+    }
+    @media (max-width: 768px) {
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            height: 844;
+            width: 390;
+
+        }
+    }
+        @media (max-width: 768px) {
+            .footer-container {
+                height: 844;
+                width: 390;
+    
+            }
+            
+
+}
+.sidebar a {
+    font-size: 24px;
+    color: #c9bb9f;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.sidebar a:hover {
+    color: #c9bb9f;
+    text-decoration: underline;
+
+}
+
+.sidebar img {
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    border-right: 1px solid #c9bb9f5e;
+    border-left: 1px solid #c9bb9f5e;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sidebar img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+.sidebar img.active {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3);
+}
 .messege {
     background-color: #0a2d06d3;
     color: #fff4de;
@@ -459,3 +522,29 @@ h2 {
     padding: 20px;
     text-align: center;
 }
+
+@media (max-width: 768px) {
+    .footer-bottom {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    }
+
+    .summa {
+        background-color: #A6EA01;
+        color:#060606;
+
+    }
+
+    @media (max-width: 430px) {
+        footer {
+            width: 390px;
+        }
+    }
+    @media (max-width: 768px) {
+        .footer-container {
+            width: 100%
+        
+        }
+    }

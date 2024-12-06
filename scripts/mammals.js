@@ -18,8 +18,8 @@ const MAMMALS = [
 
         found: "Throughout Australia",
 
-        image: "./images/Mammals/Echidna1.png",
-        icon: "./images/Mammals/Echidna1.png"
+        image: "./images/Mammals/free-photo-of-short-beaked-echidna-walking-among-rocks-and-shrubs.jpeg",
+        icon: "./images/Mammals/free-photo-of-short-beaked-echidna-walking-among-rocks-and-shrubs.jpeg",
 
 
     },
@@ -114,7 +114,7 @@ function displayMammalsInfo(index) {
 <div id="description-container" style="display: none;">
 <p>${mammal.description}</p>
 </div>
-<button id="next-button">Next</button>
+<button id="next-button" class="summa">Next</button>
 </div> `;
 
    
