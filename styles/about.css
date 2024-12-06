@@ -107,7 +107,7 @@
 
 @media (max-width: 390px) {
   img{
-    width: 50px;
+    max-width: 200px;
   }
   .sidebar-about {
     width: 100%; 
