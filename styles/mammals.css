@@ -16,8 +16,56 @@
         font-size: 20px;
     }
 }
- 
- 
+@media (max-width: 768px) {
+    .body {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .text {
+        display: flex;
+        flex-direction: column;
+        width:auto;
+    }
+}
+
+.mammals-image{
+    width:100%;
+    height:auto;
+}
+
+
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+
+        
+    }
+    
+    
+}
+
+@media (max-width: 768px) {
+    .section {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+}
 body {
  
     line-height: 1.6;
@@ -252,6 +300,8 @@ header {
  
  
 }
+
+
  .text{
     margin-top: 5rem;
  
@@ -521,7 +571,9 @@ h2 {
     color: black;
     padding: 20px;
     text-align: center;
+   
 }
+
 
 @media (max-width: 768px) {
     .footer-bottom {
@@ -544,7 +596,8 @@ h2 {
     }
     @media (max-width: 768px) {
         .footer-container {
-            width: 100%
+            width: 100%;
+
         
         }
     }

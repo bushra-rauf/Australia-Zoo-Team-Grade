@@ -103,7 +103,7 @@ function displayMammalsInfo(index) {
 
     mammalsContent.innerHTML = `
 <div class="mammals-details">
-<img src="${mammal.image}" alt="${mammal.name}">
+<img class="mammals-image" src="${mammal.image}" alt="${mammal.name}">
 <h2>${mammal.name}</h2>
 <p><strong>Lifespan:</strong> ${mammal.lifespan}</p>
 <p><strong>Group:</strong> ${mammal.group}</p>
