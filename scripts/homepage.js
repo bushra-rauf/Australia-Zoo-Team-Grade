@@ -55,8 +55,25 @@ function generateAnimalList() {
 // Call the generateAnimalList function to generate the animal list when the page loads
 document.addEventListener('DOMContentLoaded', generateAnimalList);
 
+// Track the currently active animal
+let activeAnimalIndex = null;
 function showAnimal(index) {
     const animalInfo = document.getElementById('animal-info');
+    const animalLinks = document.querySelectorAll('#animal-list a');
+ 
+    // Check if the clicked animal is already active
+    if (activeAnimalIndex === index) {
+        // If the active animal is clicked again, show the welcome message
+        showWelcomeMessage();
+        animalLinks.forEach(activeAnimalIndex => activeAnimalIndex.classList.remove('active')); // Remove active class
+        activeAnimalIndex = null; // Reset active animal
+        return;
+    } else {
+ 
+    // Clear previous active state
+    if (activeAnimalIndex !== null) {
+        animalLinks.forEach(activeAnimalIndex => activeAnimalIndex.classList.remove('active'));
+    }
     let animal = animals[index];
     const groupLink = {
         Mammal: "mammals.html",
@@ -72,9 +89,7 @@ function showAnimal(index) {
         <p>Group: <a href="${groupLink[animal.group]}" target="_blank">${animal.group}</a></p>
     `;
 } 
-// Add event listeners to sidebar links
-document.querySelectorAll('#animal-list a').forEach((link, index) => {
-    link.addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent default link behavior
-        showAnimal(index); 
-    })})
+  // Update active animal
+  activeAnimalIndex = index;
+  animalLinks.forEach(activeAnimalIndex => activeAnimalIndex.classList.add('active')); // Add active class to current link
+}
