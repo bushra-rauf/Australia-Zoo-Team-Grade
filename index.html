@@ -5,74 +5,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
-    <link rel="stylesheet" href="./styles/sidebar.css">
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/homepage.css">
     <link rel="stylesheet" href="./styles/global.css">
-    <script src="./scripts/index.js" defer></script>
-    <script src="./scripts/sidebar.js" defer></script>
+    <script src="./scripts/homepage.js" defer></script>
     <script src="./scripts/index.js" defer></script>
 </head>
 <body>
-  <header class="header-b">
-    
-
+    <header class="header-b">
         <div class="logo-b">
-            <img src="./images/zoologo xx..png" alt="logo">
-            
+            <img src="./images/icons/zoologo xx..png" alt="logo">    
         </div>
         <div class="page-title">DJURPARK AUSTRALIAN ZOO</div>
-   
-    <div class="menu-btn-navbar">
-        <div class="btnn-line"></div>
-        <div class="btnn-line"></div>
-        <div class="btnn-line"></div>
-    </div>
+        <div class="menu-btn-navbar">
+            <div class="btnn-line"></div>
+            <div class="btnn-line"></div>
+            <div class="btnn-line"></div>
+        </div>
         <div class="navbar">
-        <ul class="navbar-list" class="navbar-ul">
-            <li><a href="./index.html"class="active">Home</a></li>
-            <li><a href="./mammals.html">Mammals</a></li>
-            <li><a href="./birds.html">Birds</a></li>
-            <li><a href="./reptiles.html">Reptiles</a></li>
-            <li><a href="./about.html">About us</a></li>
-        </ul>
-    </div>
-</header>
-
-    <main>
-        
-                  <!-- This sideBar to be replaced by JS in every page. It has the name of animales from JS BUT it is just an example you can delete everything in JS and add yours-->
-        <aside class="asid-home-page">
-            <!-- Toggle for responsive navbar-->
-            <div class="menu-btn">
-                <div class="btn-line"></div>
-                <div class="btn-line"></div>
-                <div class="btn-line"></div>
-            </div>
-            <div class="reptil_side_bar sidebar-linkss asid-home-links">
-                <h2>Animales</h2>
-            </div>
+            <ul class="navbar-list" class="navbar-ul">
+                <li><a href="./index.html"class="active">Home</a></li>
+                <li><a href="./mammals.html">Mammals</a></li>
+                <li><a href="./birds.html">Birds</a></li>
+                <li><a href="./reptiles.html">Reptiles</a></li>
+                <li><a href="./about.html">About us</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="content">
+        <aside class="sidebar">
+            <ul id="animal-list">
+                <!-- Animal list will be displayed here -->
+            </ul>    
         </aside>
-        
-    </main>
-    
-    <footer>
+        <main class="main-content">
+            <h2>The Australian Animals Exhibition</h2>
+            <p>Explore the fascinating wildlife of Australia!</p>
+        <div id="animal-info">
+            <!-- Animal info will be displayed here -->
+        </div>
+        </main>
+      <footer>
         <div class="footer-container">
-        <!-- About Section -->
             <div class="footer-section about">
                 <h3>About Australia Zoo</h3>
                 <p>
                     Located on the Sunshine Coast, Queensland, Australia Zoo is dedicated to wildlife conservation and education, continuing Steve Irwin's legacy.
                 </p>
             </div>
-            <!-- Team Name Section -->
             <div class="footer-section team">
                 <h3>Team Name: Nature Ninjas</h3>
                 <p>
                     <strong>Team Members:</strong> Moshira, Ranjitha, Souad, Meaza, Bushra
                 </p>
             </div>
-    
-            <!-- School Information Section -->
             <div class="footer-section school-info">
                 <h3>School Information</h3>
                 <p>
@@ -86,26 +71,21 @@
                     <strong>Semester:</strong> Autumn 2024
                 </p>
             </div>
-    
             <!-- Quick Links Section -->
             <div class="footer-section quick-links">
                 <h3>Quick Links</h3>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
                     <li><a href="mammals.html">Mammals</a></li>
                     <li><a href="reptiles.html">Reptiles</a></li>
                     <li><a href="birds.html">Birds</a></li>
                 </ul>
             </div>
         </div>
-    
-        <!-- Footer Bottom -->
         <div class="footer-bottom">
             <p>&copy; 2024 Australia Zoo. All rights reserved.</p>
         </div>
     </footer>
- 
 </body>
-
 </html>

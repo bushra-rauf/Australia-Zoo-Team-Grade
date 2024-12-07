@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <link rel="stylesheet" href="./styles/sidebar.css">
-    <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/about.css">
     <script src="./scripts/sidebar.js" defer></script>
+    <script src="./scripts/about.js" defer></script>
     <script src="./scripts/index.js" defer></script>
 </head>
 <body>
   <header class="header-b">
     <div class="logo-b">
-        <img src="./images/zoologo xx..png" alt="logo">
+        <img src="./images/icons/zoologo xx..png" alt="logo">
         
     </div>
     <div class="page-title">DJURPARK AUSTRALIAN ZOO</div>
@@ -34,3 +35,88 @@
         </ul>
     </div>
 </header>
+<div class="container-about">
+    <aside class="sidebar-about">
+        <h2>NATURE NINJAS</h2>
+        <ul id="team-list"></ul>
+    </aside>
+    <main class="main-content">
+        <h1>Welcome to Our Team Page</h1>
+        <div id="default-message" class="default-message">
+            We are a group of passionate individuals with diverse backgrounds,
+            dedicated to creating beautiful and functional websites.
+            Click on a team member's image to learn more about them. 
+        </div>
+        <div class="team-container">
+            <div class="team-member" onclick="showMemberDetails('Moshira')">
+                <img src="images/aboutteams/moshira3.jpg" alt="Moshira" class="team-member-img"/>
+                <p>Moshira</p>
+            </div>
+            <div class="team-member" onclick="showMemberDetails('Bushra')">
+                <img src="images/aboutteams/bushra2.jpg" alt="Bushra" class="team-member-img"/>
+                <p>Bushra</p>
+            </div>
+            <div class="team-member" onclick="showMemberDetails('Souad')">
+                <img src="images/aboutteams/souad2.jpg" alt="Souad" class="team-member-img"/>
+                <p>Souad</p>
+            </div>
+            <div class="team-member" onclick="showMemberDetails('Meaza')">
+                <img src="images/aboutteams/meaza.jpg" alt="Meaza" class="team-member-img"/>
+                <p>Meaza</p>
+            </div>
+            <div class="team-member" onclick="showMemberDetails('Ranjitha')">
+                <img src="images/aboutteams/ranjitha.jpg" alt="Ranjitha" class="team-member-img"/>
+                <p>Ranjitha</p>
+            </div>
+        </div>
+        <div id="member-info" class="member-info">
+            <img id="member-image" src="" />
+            <div id="member-details"></div>
+        </div>
+    </main>
+</div>
+<footer>
+    <div class="footer-container">
+        <div class="footer-section about">
+            <h3>About Australia Zoo</h3>
+            <p>
+                Located on the Sunshine Coast, Queensland, Australia Zoo is dedicated to wildlife conservation and education, continuing Steve Irwin's legacy.
+            </p>
+        </div>
+        <div class="footer-section team">
+            <h3>Team Name: Nature Ninjas</h3>
+            <p>
+                <strong>Team Members:</strong> Moshira, Ranjitha, Souad, Meaza, Bushra
+            </p>
+        </div>
+        <div class="footer-section school-info">
+            <h3>School Information</h3>
+            <p>
+                This project was created for <strong>School of Future Games</strong> as part of the <strong>Australia Zoo Team Grade</strong> assignment.
+            </p>
+            <p>
+                <strong>Course:</strong> JavaScript<br>
+                <strong>Subject Name:</strong> Australia Zoo Team Grade<br>
+                <strong>Developed by:</strong> Meaza, Souad, Moshira, Ranjitha, Bushra<br>
+                <strong>Instructor:</strong> Rob<br>
+                <strong>Semester:</strong> Autumn 2024
+            </p>
+        </div>
+        <div class="footer-section quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="mammals.html">Mammals</a></li>
+                <li><a href="reptiles.html">Reptiles</a></li>
+                <li><a href="birds.html">Birds</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Australia Zoo. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

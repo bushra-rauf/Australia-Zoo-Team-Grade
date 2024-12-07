@@ -1,0 +1,36 @@
+
+.content {
+    display: flex;
+    flex-grow: 1;
+}
+
+.sidebar {
+    width: 25%;
+    background-color: var(--sidebar-bkg-color);
+    margin: 40px;
+    padding: 20px;
+}
+
+.main-content {
+    width: 75%; 
+    padding: 20px;
+    font-size: 1.5rem;
+    color: var(--heading-p-colour);
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .main-content {
+        width: 100%;
+        padding: 10px;
+    }
+}
