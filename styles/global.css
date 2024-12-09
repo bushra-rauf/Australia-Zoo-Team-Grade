@@ -67,64 +67,6 @@ body {
 
 /*Sidebar*/
 
-/*Side bar home page*/
-/* .asid-home-page {    
-    font-family: "League Spartan", sans-serif;
-    background-color: var(--sidebar-bkg-color);
-    color: var(--primary-text-color);
-    width: 300px;
-    padding: 70px 5px;
-    margin: 50px 0px 50px 100px;
-    
-}
-
-.links {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    font-size: 1rem;
-    margin: 20px;
-    color: white;
-    text-decoration: none;
-    border: 1px solid green;
-    align-items: center;
-    cursor: pointer;
-}
-
-.asid-home-links h2{
-    text-align: center;    
-}
-
-.links:hover {
-    background-color: #E4E4E4;
-    color: black;
-    border-top-left-radius: 50px;
-}
-
-.links:hover {
-    -webkit-transition: background-color 1.5s ease-out;
-    -moz-transition: background-color 1.5s ease-out;
-    -o-transition: background-color 1.5s ease-out;
-    transition: background-color 1.5s ease-out;
-}
-
-/*Toggel button
-
-.menu-btn {
-    display: flex;
-    flex-direction: column;
-    float: right;
-    padding-bottom: 40px;
-    display: none;
-    
-}
-
-.btn-line { 
-    margin: 2px;
-    width: 17px;
-    border: solid white 1px;
-} */
-
 
 
 
