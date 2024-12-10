@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             name: "Ranjitha",
             image: "images/aboutteams/ranjitha.jpg",
-            details: "Hello!,My name is Ranjitha velusamy, Master of Business Administration and worked in Tamil Nadu Government Administration, India. Currently, doing Front End Programming in Sweden. I worked on the mammals section,"
+            details: "Hello!,My name is Ranjitha velusamy, Master of Business Administration and worked in Tamil Nadu Government Administration, India. Currently, doing Front End Programming in Sweden. I worked on the mammals section."
         }
     ];
 
