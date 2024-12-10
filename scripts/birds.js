@@ -37,53 +37,66 @@ const BIRDS = [
     }
 ];
 
-const sidebar = document.querySelector('.sidebar');
-const birdContent = document.querySelector('.bird-content');
+const sidebar = document.querySelector('.bird-icons');
+let selectedBirdIndex = null;
 
 BIRDS.forEach((bird, index) => {
-    const img = document.createElement('img');
-    img.src = bird.icon;
-    img.alt = bird.name;
-    img.dataset.index = index;
-    img.addEventListener('click', () => displayBirdInfo(index));
-    sidebar.appendChild(img);
+  const img = document.createElement('img');
+  img.src = bird.icon;
+  img.alt = bird.name;
+  img.dataset.index = index;
+  img.classList.add('bird-icon');
+  img.addEventListener('click', () => displayBirdInfo(index));
+  sidebar.appendChild(img);
 });
 
 function displayBirdInfo(index) {
-    const bird = BIRDS[index];
+  const bird = BIRDS[index];
 
-    const allImages = document.querySelectorAll('.sidebar img');
-    allImages.forEach(img => img.classList.remove('active'));
+  if (selectedBirdIndex === index) {
+    resetView();
+    return;
+  }
 
-    const selectedImg = allImages[index];
-    selectedImg.classList.add('active');
+  selectedBirdIndex = index;
 
-    birdContent.innerHTML = `
-        <div class="bird-details">
-            <img src="${bird.image}" alt="${bird.name}">
-            <div class="bird-info">
-                <h2>${bird.name}</h2>
-                <p><strong>Lifespan:</strong> ${bird.lifespan}</p>
-                <p><strong>Group:</strong> ${bird.group}</p>
-                <p><strong>Food:</strong> ${bird.food}</p>
-                <p><strong>Length:</strong> ${bird.length}</p>
-                <p><strong>Weight:</strong> ${bird.weight}</p>
-                <p><strong>Found:</strong> ${bird.found}</p>
-                <div id="description-container" style="display: none;">
-                    <p>${bird.description}</p>
-                </div>
-                <button id="see-more-button">See More</button>
-            </div>
-        </div>
-    `;
+  document.getElementById('bird-image').src = bird.image;
+  document.getElementById('bird-name').textContent = bird.name;
+  document.getElementById('bird-lifespan').textContent = bird.lifespan;
+  document.getElementById('bird-group').textContent = bird.group;
+  document.getElementById('bird-food').textContent = bird.food;
+  document.getElementById('bird-length').textContent = bird.length;
+  document.getElementById('bird-weight').textContent = bird.weight;
+  document.getElementById('bird-found').textContent = bird.found;
+  document.getElementById('bird-description').textContent = bird.description;
 
-    // see more
-    const seeMoreButton = document.getElementById('see-more-button');
-    const descriptionContainer = document.getElementById('description-container');
+  document.getElementById('default-content').style.display = 'none';
+  document.getElementById('bird-details').style.display = 'block';
 
-    seeMoreButton.addEventListener('click', () => {
-        const isHidden = descriptionContainer.style.display === 'none';
-        descriptionContainer.style.display = isHidden ? 'block' : 'none';
-        seeMoreButton.textContent = isHidden ? 'See Less' : 'See More';
-    });
+  const descriptionContainer = document.getElementById('description-container');
+  descriptionContainer.style.display = 'none';
+
+  const seeMoreButton = document.getElementById('see-more-button');
+  seeMoreButton.removeEventListener('click', toggleDescription);
+  seeMoreButton.addEventListener('click', toggleDescription);
+}
+
+function toggleDescription() {
+  const descriptionContainer = document.getElementById('description-container');
+  const seeMoreButton = document.getElementById('see-more-button');
+  const isHidden = descriptionContainer.style.display === 'none';
+  descriptionContainer.style.display = isHidden ? 'block' : 'none';
+  seeMoreButton.textContent = isHidden ? 'See Less' : 'See More';
+}
+
+function resetView() {
+  selectedBirdIndex = null;
+
+  document.getElementById('default-content').style.display = 'block';
+  document.getElementById('bird-details').style.display = 'none';
+
+  const seeMoreButton = document.getElementById('see-more-button');
+  const descriptionContainer = document.getElementById('description-container');
+  descriptionContainer.style.display = 'none';
+  seeMoreButton.textContent = 'See More';
 }
