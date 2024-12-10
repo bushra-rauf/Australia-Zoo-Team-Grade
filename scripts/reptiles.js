@@ -1,17 +1,20 @@
 //Side-bare responsive to be copy to home page
 const togglButton = document.querySelector(".menu-btnn");
 let asidBarShow = document.querySelector(".asid-home-page-reptiles");
-let togglMain = document.querySelector(".reptile-fromjs")
+let togglMain = document.querySelector(".reptile-fromjs");
 //let animalsLink = document.querySelectorAll(".animals-list") ;
 togglButton.addEventListener("click", () =>{
-   asidBarShow.classList.toggle("open");
-  // animalsLink.classList.toggle("open");   // for the links
-   togglButton.classList.toggle("chang-color");
+    asidBarShow.classList.toggle("open");
+    // animalsLink.classList.toggle("open");   // for the links
+    togglButton.classList.toggle("chang-color");
     
 });
 
-togglMain.addEventListener("click", () =>{
+
+let reptilesLinks = document.querySelector(".sidbar-links");
+reptilesLinks.addEventListener("click", () =>{
     asidBarShow.classList.toggle("open");   
+    
  });
 
   
