@@ -10,6 +10,7 @@
 
 .container-about {
   display: flex;
+  margin-bottom: 200px;
   gap: 20px;
   flex-wrap: wrap; 
   padding: 20px;
