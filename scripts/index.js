@@ -1,8 +1,8 @@
-let clickToggle = document.querySelector(".menu-btn-navbar");
-clickToggle.addEventListener("click", () =>{
-   // document.querySelector("span").classList.toggle("open")
-    document.querySelector(".navbar").classList.toggle("toggle-header")
-})
+// let clickToggle = document.querySelector(".menu-btn-navbar");
+// clickToggle.addEventListener("click", () =>{
+//    // document.querySelector("span").classList.toggle("open")
+//     document.querySelector(".navbar").classList.toggle("toggle-header")
+// })
 
 
 //sidebar responsive
