@@ -4,28 +4,48 @@
 }
 
 .content {
-    display: flex; 
+    display: flex;
+    flex-grow: 1; 
 }
 
 .sidebar {
     background-color: var(--sidebar-bkg-color);
-    padding: 100px 5px;
+    padding: 5px; 
     width: 300px;
-    /* height: 100vh; */
     display: flex;
     flex-direction: column;
+    margin:5px;
 }
 
-.sidebar  div {
-    padding: 10px;
-    margin: 5px;
+.animals {
+    text-align: center;
+    color: rgb(32, 227, 15);
+    border-radius: 2px;
+    padding: 2px;
+    margin-bottom: 25px; 
 }
 
-.sidebar  div a {
-   color: aliceblue;
+.sidebar div { 
+    margin: 10px;
+}
+
+.sidebar div a {
+   color: rgb(11, 39, 3);
+   text-align: center;
    text-decoration: none;
-   padding: 20px 10px;
+   padding: 10px;
+   border: 2px solid #87ea71;
+   margin-bottom: 15px;
+   border-radius: 8px;
+   display: block;
+   background-color: #66a474;
+   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
+
+.sidebar div a:hover {
+    background-color: #39e812;
+    border-color: #b0b0b0;
+} 
 
 #animal-info {
     display: flex;
@@ -42,21 +62,21 @@
     flex-direction: column;
     align-items: center;
     margin: 0px 80px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     width: 75%;
     color: var(--heading-p-colour);
     background-color: rgb(109, 186, 126); 
-    margin: 40px;
+    margin: 5px;
     padding: 20px;
     border-radius: 5px;
 }
 
 #animal-info img {
-    height: 500px;
-    width: 700px;
+    height: 300px;
+    width: 450px;
 }
 
-.sidbarbtn {
+/* .sidbarbtn {
     background-color: var(--sidebar-bkg-color);
     margin-left: 300px;
     padding: 4px;
@@ -65,10 +85,9 @@
 
 .btnn-line {
     padding: 0.3px;
-}
+} */
 
-@media (max-width: 375px) {
-
+/* @media (max-width: 375px) {
     #animal-info img {
         height: 200px;
         width: 300px;
@@ -82,9 +101,8 @@
         margin: 0;
         font-size: 1.2rem;
     }
-
-}
-
+} */
+/* 
 @media (max-width: 344px) {
 
     #animal-info img {
@@ -105,7 +123,6 @@
         padding: 0;
         margin: 0;
     }
- 
 }
 
 @media (max-width: 414px) {
@@ -159,6 +176,7 @@
         width: 100%;
         max-width: 300px;
         transition: 0.2s linear;
+        height: 100vh;
     }
  
     .reptiles-animale {
@@ -174,9 +192,8 @@
     .open-sidebar {
         left: 0;
     }
-
-}
-
+} */
+/* 
 @media (max-width: 768px) {
 
     #animal-info img {
@@ -197,9 +214,8 @@
         margin: 0;
         padding: 10px;
     }
-
-}
-
+} */
+/* 
 @media (max-width: 820px) {
 
     #animal-info img {
@@ -228,32 +244,66 @@
         height: 300px;
         width: 400px;
     }
-} 
+}  
+ */
 
-/* @media (max-width: 768px) {
+ @media (max-width: 768px) {
     .content {
         flex-direction: column;
     }
 
     .sidebar {
         width: 100%;
-        margin: 0;
         padding: 10px;
+        margin: 0;
     }
 
     .main-content {
+        margin: 20px;
+        font-size: 1rem;
+        width: 90%;
+    }
+    
+    #animal-info img {
+        height: 300px;
         width: 100%;
-        padding: 10px;
-        margin:0;
+    }
+
+    .sidebar div a {
+        font-size: 0.9rem;
+        padding: 5px;
     }
 }
 
-@media (max-width: 480px) { 
-    .main-content { 
-        font-size: 1.2rem; 
-    } 
-    
-    #animal-info { 
-        padding: 8px; 
+@media (max-width: 375px) {
+    .content {
+    flex-direction: column;
     }
-} */
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+    }
+
+    #animal-info img {
+        height: 200px;
+        width: 100px;
+    }
+
+    #animal-info {
+        padding: 8px;
+    }
+
+    .sidebar div a {
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+
+    .main-content {
+        margin: 10px;
+        font-size: 1rem;
+        padding: 15px;
+        width: 100%;
+    }
+}
+
