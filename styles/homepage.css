@@ -9,23 +9,41 @@
 
 .sidebar {
     background-color: var(--sidebar-bkg-color);
-    padding: 100px 5px;
+    padding: 5px; 
     width: 300px;
-    /* height: 100vh; */
     display: flex;
     flex-direction: column;
 }
 
-.sidebar  div {
-    padding: 10px;
-    margin: 5px;
+.animals {
+    text-align: center;
+    color: rgb(32, 227, 15);
+    border-radius: 2px;
+    padding: 2px;
+    margin-bottom: 25px; 
+}
+
+.sidebar  div { 
+    margin: 10px;
 }
 
 .sidebar  div a {
-   color: aliceblue;
+   color: rgb(11, 39, 3);
+   text-align: center;
    text-decoration: none;
-   padding: 20px 10px;
+   padding: 10px;
+   border: 2px solid #87ea71;
+   margin-bottom: 15px;
+   border-radius: 8px;
+   display: block;
+   background-color: #66a474;
+   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
+
+.sidebar div a:hover {
+    background-color: #39e812;
+    border-color: #b0b0b0;
+} 
 
 #animal-info {
     display: flex;
@@ -42,7 +60,7 @@
     flex-direction: column;
     align-items: center;
     margin: 0px 80px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     width: 75%;
     color: var(--heading-p-colour);
     background-color: rgb(109, 186, 126); 
@@ -68,7 +86,6 @@
 }
 
 @media (max-width: 375px) {
-
     #animal-info img {
         height: 200px;
         width: 300px;
@@ -82,7 +99,6 @@
         margin: 0;
         font-size: 1.2rem;
     }
-
 }
 
 @media (max-width: 344px) {
@@ -105,7 +121,6 @@
         padding: 0;
         margin: 0;
     }
- 
 }
 
 @media (max-width: 414px) {
@@ -159,6 +174,7 @@
         width: 100%;
         max-width: 300px;
         transition: 0.2s linear;
+        height: 100vh;
     }
  
     .reptiles-animale {
@@ -197,7 +213,6 @@
         margin: 0;
         padding: 10px;
     }
-
 }
 
 @media (max-width: 820px) {
@@ -228,32 +243,5 @@
         height: 300px;
         width: 400px;
     }
-} 
+}  
 
-/* @media (max-width: 768px) {
-    .content {
-        flex-direction: column;
-    }
-
-    .sidebar {
-        width: 100%;
-        margin: 0;
-        padding: 10px;
-    }
-
-    .main-content {
-        width: 100%;
-        padding: 10px;
-        margin:0;
-    }
-}
-
-@media (max-width: 480px) { 
-    .main-content { 
-        font-size: 1.2rem; 
-    } 
-    
-    #animal-info { 
-        padding: 8px; 
-    }
-} */
