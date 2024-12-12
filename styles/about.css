@@ -1,13 +1,3 @@
-:root {
-  --header-color: #023E25;
-  --primary-text-color: #A6EA01;
-  --secondary-text-color: #E4E4E4;
-  --sidebar-bg: #39735B;
-  --footer-bg: #023E25;
-  --footer-text: #E4E4E4;
-  --footer-accent: #A6EA01;
-}
-
 .container-about {
   display: flex;
   margin-bottom: 200px;
