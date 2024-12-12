@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             name: "Bushra",
             image: "images/aboutteams/bushra2.jpg",
-            details: "Hi!, My name is Bushra Raouf, an MBA holder from England, completed my studies in 2012. After gaining valuable experience in the business field, I decided to change my career path and pursue my true passion of web development. I have already acquired basic knowledge in web development including HTML and CSS, and I am currently working on improving my skills with JavaScript. I working on home section."
+            details: "Hi!, My name is Bushra Rauf, an MBA holder from England, completed my studies in 2012. After gaining valuable experience in the business field, I decided to change my career path and pursue my true passion of web development. I have already acquired basic knowledge in web development including HTML and CSS, and I am currently working on improving my skills with JavaScript. I worked on home section."
         },
         {
             name: "Souad",
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             name: "Ranjitha",
             image: "images/aboutteams/ranjitha.jpg",
-            details: "Hello!,My name is Ranjitha velusamy, Master of Business Administration and worked in Tamil Nadu Government Administration, India. Currently, doing Front End Programming in Sweden. I worked on the mammals section."
+            details: "Hello!,My name is Ranjitha Velusamy, Master of Business Administration and worked in Tamil Nadu Government Administration, India. Currently, doing Front End Programming in Sweden. I worked on the mammals section."
         }
     ];
 
