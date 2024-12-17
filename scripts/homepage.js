@@ -90,12 +90,12 @@ function showAnimal(index) {
     `;
 } 
 
-// Add event listeners to sidebar links
-document.querySelectorAll('#animal-list a').forEach((link, index) => {
-    link.addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent default link behavior
-        showAnimal(index); 
-    })})
+// // Add event listeners to sidebar links
+// document.querySelectorAll('#animal-list a').forEach((link, index) => {
+//     link.addEventListener('click', function(event) {
+//         event.preventDefault(); // Prevent default link behavior
+//         showAnimal(index); 
+//     })})
 
   // Update active animal
   activeAnimalIndex = index;

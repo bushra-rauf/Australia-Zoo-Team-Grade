@@ -246,8 +246,9 @@
     }
 }  
  */
+ /* ////////// */
 
- @media (max-width: 768px) {
+ /* @media (max-width: 768px) {
     .content {
         flex-direction: column;
     }
@@ -303,7 +304,61 @@
         margin: 10px;
         font-size: 1rem;
         padding: 15px;
+        width: 90%;
+    }
+} */
+
+@media (max-width: 768px) and (max-height: 1024px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .main-content {
+        width: 90%;
+        margin: 20px auto;
+        font-size: 1rem;
+    }
+
+    #animal-info img {
+        height: 300px;
         width: 100%;
     }
+
+    .sidebar div a {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
 }
+
+@media (max-width: 390px) and (max-height: 844px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .main-content {
+        padding: 15px;
+    }
+
+    #animal-info img {
+        height: 200px;
+        width: 100%;
+    }
+
+    .sidebar div a {
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+}
+
 
