@@ -24,17 +24,17 @@
     }
 }
 
-@media (max-width: 768px) {
+
     .text {
         display: flex;
         flex-direction: column;
         width:auto;
     }
-}
 
-.mammals-image{
-    width:100%;
-    height:auto;
+
+    .mammals-image{
+        width:100%;
+        height:auto;
 }
 
 
