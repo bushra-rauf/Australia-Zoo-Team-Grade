@@ -1,0 +1,353 @@
+
+:root {
+    --sidebar-bkg-color: #023E25;
+    --active-color: #3d4f14;
+    --header-color: #023E25;
+    --primary-text-color: #A6EA01;
+    --secoundary-text-color: #E4E4E4;
+    --sidebar: #39735B;
+    --button-color: #192822;
+    --footer-text: #e4e4e4;
+    --footer-accent: #a6ea01;
+};
+
+body { 
+    line-height: 1.6; 
+    background-color: #f4f4f9; 
+    color: #023E25; 
+    height: 100%; 
+}
+ /* Header Styles */ 
+.header-m { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #023E25; 
+    color: #fff; 
+} 
+
+.header-m .logo-h img {
+    width: 80px; 
+    height: auto; 
+}
+ 
+.page-title_m {    
+    font-weight: 400;
+    font-size: 15px;
+    padding-top: 10px;
+    color: #c9bb9f;
+} 
+
+.navbar-m { 
+    display: flex;
+    align-items: center; 
+} 
+
+.navbar-m-list { 
+    display: flex; 
+    list-style: none; 
+} 
+
+.navbar-m-list li {
+    margin-right: 1.5rem; 
+} 
+
+.navbar-m-list li a { 
+    text-decoration: none; 
+    color: #c9bb9f; 
+    transition: color 0.3s; 
+} 
+
+.navbar-m-list li a:hover, .navbar-m-list li a.active { 
+    color: #f3eded;
+    text-decoration: underline; 
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    width:auto;
+}
+
+.mammals-image{
+    width:100%;
+    height:auto;
+    margin-top: 30px;
+}
+
+/* Sidebar Styles */
+.sidebar-stucture {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    min-height: calc(100vh - 80px);
+    background-size: cover;
+}
+
+.sidebar {
+    background-color: var(--header-color);
+    color: #c9bb9f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200;
+    padding: 5rem;
+    margin: 50px 0 0 0;
+}
+ 
+.sidebar .nav-link {
+   list-style: none;
+   width: 100%;
+}
+ 
+.sidebar .nav-link li {
+   margin: 1rem 0;
+   text-align: center;
+}
+ 
+.sidebar .nav-link li a {
+   text-decoration: none;
+   color: #c9bb9f;
+   font-size: 1.2rem;
+   transition: color 0.3s, transform 0.3s;
+}
+ 
+.sidebar .nav-link li a:hover {
+   color: #fff;
+   transform: scale(1.1);
+}
+
+.sidebar img {
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    border-right: 1px solid #c9bb9f5e;
+    border-left: 1px solid #c9bb9f5e;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin: 20px;
+}
+
+.sidebar img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+/* Main Content Styles */
+.mammals-page {
+    padding: 3rem;
+    color: #023E25;
+    background-color:rgba(246, 7, 162, 0);
+}
+ 
+.mammals-page h2 {
+    text-align:center;
+    font-size: 2rem;
+    padding: 1rem;
+}
+ 
+.main-background {
+    background: url("../images/animals-8602447_1280.rab.webp");
+    background-size: cover;
+    background-position: right;
+}
+
+.mammals-summary {
+    margin-top: 5rem;
+    padding: 1.5rem;
+    background-color: #1d5b16d3;
+    color: #fff4de;
+    border-radius: 10px;
+}
+ 
+.mammals-summary h5 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem
+}
+ 
+.mammals-summary p {
+    background-color: #023E25;
+    padding: 1rem;
+    color: #c9bb9f;
+    border-radius: 5px;
+}
+
+.text{
+    margin-top: 5rem;
+    padding: 1.5rem;
+    background-color: #1d5b16d3;
+    color: #fff4de;
+    border-radius: 10px;
+}
+
+.text p{
+    background-color: #023E25;
+    padding: 1rem;
+    color: #c9bb9f;
+    border-radius: 5px;
+}
+ 
+@media (max-width: 768px) and (max-height: 1024px) { 
+    .body {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .header-m { 
+        display: flex;
+        flex-direction: row; /* Row direction for logo and title */
+        align-items: center;
+        padding: 3px;
+        justify-content: space-between; /* Space elements apart */
+    }
+
+    .logo-h {
+        display: flex;
+        align-items: center;
+    }
+
+    .page-title_m { 
+        font-size: 1rem; 
+        margin-left: 1rem;
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .navbar-m {
+        width: 100%;
+        margin-top: 1rem; /* Ensure some space above navbar */
+        display: flex;
+        justify-content: flex-end; /* Align items to the right */
+    }
+
+    ul.navbar-m-list {
+        display: flex;
+        flex-direction: row; /* Horizontal layout for items */
+        justify-content: flex-end; /* Align items to the right */
+        list-style: none; /* Remove dots */
+        padding: 0; /* Remove padding */
+        margin: 0; /* Remove margin */
+        width: 100%;
+    }
+
+    .navbar-m-list li {
+        margin-right: 0.3rem; 
+    }
+
+    .navbar-m-list li a { 
+        font-size: 1.2rem; /* Increase font size */
+    }
+
+    .main-content { 
+        padding: 2rem; 
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        width:auto;
+    }
+
+    .mammals-summary { 
+        margin-top: 3rem; 
+        padding: 1.5rem; 
+    }
+
+    .mammals-page h2 { 
+       font-size: 1.8rem; 
+    }
+
+    .messege h2 {
+        font-size: 20px;
+    } 
+
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .section {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+@media (max-width: 390px) and (max-height: 844px) {
+    .header-m { 
+        display: flex;
+        flex-direction: row; /* Ensure header elements are in a row */
+        align-items: center; /* Vertically align items */
+        padding: 1rem; 
+        justify-content: space-between; /* Space elements apart */
+    }
+
+    .logo-h {
+        display: flex;
+        align-items: center;
+    }
+
+    .page-title_m { 
+        font-size: 1.2rem; 
+        margin-left: 1rem; /* Ensure separation from logo */
+        flex-grow: 1; /* Ensure title has enough space */
+    }
+
+    .navbar-m {
+        width: 100%; /* Ensure full width */
+        margin-top: 1rem; /* Add some space above the navbar */
+        display: flex;
+        justify-content: flex-end; /* Align items to the right */
+    }
+
+    ul.navbar-m-list { 
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-end; /* Align items to the right */
+        margin: 0; /* Reset margin */
+        padding: 0; /* Reset padding */
+        list-style: none; /* Remove bullets */
+    }
+
+    .navbar-m-list li {
+        margin-right: 0.3rem; 
+    }
+
+    .navbar-m-list li a { 
+        font-size: 0.9rem; 
+    } 
+
+    .main-content { 
+        padding: 1rem; 
+    } 
+
+    .text, .mammals-summary {
+        margin-top: 2rem; 
+        padding: 1rem; 
+    }
+
+    .mammals-page h2 { 
+        font-size: 1.5rem; 
+    }
+
+    .sidebar-stucture {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar { 
+        width: 100%; 
+        padding: 2rem; 
+    }
+
+    .sidebar .nav-link li a {
+        font-size: 1rem;
+    }
+     
+    .sidebar img { 
+        height: 120px;
+        width: 120px;
+    } 
+}
