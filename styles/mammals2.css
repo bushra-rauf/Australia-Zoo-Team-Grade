@@ -19,7 +19,8 @@ body {
 }
  /* Header Styles */ 
 .header-m { 
-    display: flex; 
+
+    display:contents; 
     justify-content: space-between; 
     align-items: center; 
     background-color: #023E25; 
@@ -27,7 +28,7 @@ body {
 } 
 
 .header-m .logo-h img {
-    width: 80px; 
+    width: 90px; 
     height: auto; 
 }
  
@@ -189,6 +190,7 @@ body {
  
 @media (max-width: 768px) and (max-height: 1024px) { 
     .body {
+        width: 100;
         display: flex;
         flex-direction: column;
         height: auto;
