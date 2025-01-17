@@ -1,15 +1,4 @@
 
-:root {
-    --sidebar-bkg-color: #023E25;
-    --active-color: #3d4f14;
-    --header-color: #023E25;
-    --primary-text-color: #A6EA01;
-    --secoundary-text-color: #E4E4E4;
-    --sidebar: #39735B;
-    --button-color: #192822;
-    --footer-text: #e4e4e4;
-    --footer-accent: #a6ea01;
-};
 
 body { 
     line-height: 1.6; 
